@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+    <Button
+        android:id="@+id/btnBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Bottom Navigation"
+        app:layout_constraintBottom_toTopOf="@+id/btnDrawer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Drawer Navigation"
+        app:layout_constraintBottom_toTopOf="@+id/btnBoth"
+        app:layout_constraintEnd_toEndOf="@+id/btnBottom"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnBottom"
+        app:layout_constraintTop_toBottomOf="@+id/btnBottom" />
+
+    <Button
+        android:id="@+id/btnBoth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Bottom And Drawer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnDrawer"
+        app:layout_constraintStart_toStartOf="@+id/btnDrawer"
+        app:layout_constraintTop_toBottomOf="@+id/btnDrawer" />
+</androidx.constraintlayout.widget.ConstraintLayout>
